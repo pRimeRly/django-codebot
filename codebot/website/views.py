@@ -20,7 +20,6 @@ lang_list = [
 
 def home(request):
 	load_dotenv()
-	# lang_list = ['c', 'clike', 'cpp', 'csharp', 'css', 'dart', 'django', 'docker', 'go', 'html', 'java', 'javascript', 'markup', 'markup-templating', 'matlab', 'mongodb', 'php', 'powershell', 'python', 'r', 'regex', 'ruby', 'rust', 'scala', 'solidity', 'sql', 'swift', 'typescript']
 
 	if request.method == 'POST':
 		code = request.POST['code']
@@ -67,7 +66,6 @@ def home(request):
 
 def suggest(request):
 	load_dotenv()
-	# lang_list = ['c', 'clike', 'cpp', 'csharp', 'css', 'dart', 'django', 'docker', 'go', 'html', 'java', 'javascript', 'markup', 'markup-templating', 'matlab', 'mongodb', 'php', 'powershell', 'python', 'r', 'regex', 'ruby', 'rust', 'scala', 'solidity', 'sql', 'swift', 'typescript']
 
 	if request.method == 'POST':
 		code = request.POST['code']
