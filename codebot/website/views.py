@@ -121,7 +121,7 @@ def login_user(request):
 			messages.success(request, 'Login successful.')
 			return redirect('home')
 		else:
-			messages.success(request, 'Error Logging In. Please try again.')
+			messages.error(request, 'Error Logging In. Please try again.')
 			return redirect('home')
 	else:
 		return render(request, 'home.html', {})

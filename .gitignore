@@ -1,3 +1,10 @@
+#Environments
 venv/
-lang
 .env
+test-env
+
+#IDE
+.idea/
+
+#Files
+lang
